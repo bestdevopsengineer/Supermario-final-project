@@ -45,8 +45,8 @@ jobs:
  
       - name: Build and Push Docker Image
         run: |
-          docker build -t docker.io/raghuthesecurityexpert/supermariogitopsproject:${{ env.VERSION }} .
-          docker push docker.io/raghuthesecurityexpert/supermariogitopsproject:${{ env.VERSION }}
+          docker build -t docker.io/ovdi/supermariogitopsproject:${{ env.VERSION }} .
+          docker push docker.io/ovdi/supermariogitopsproject:${{ env.VERSION }}
  
   run_container_image_scan_on_supermario_docker_image:
     runs-on: ubuntu-latest
