@@ -1,3 +1,23 @@
+# integrate sonarqube into the pipeline
+1) Clone SuperMario Game GitHub Repo from GitHub on local System
+2) Open in Visual Studio Code
+3) Add GitHub Actions to integrate SonarQube 
+4) Create a Project in SonarQube
+5) Create a sonar-project.properties file in your repo in Visual Studio Code and add Project Key from SonarQube
+6) Create a Security Token in SonarQube
+7) Create SONAR_HOST_URL and SONAR_TOKEN repository secrets in your GitHub Repo
+8) Push GitHub Actions code to GitHub Repo
+9) Verify that SonarQube SAST analysis runs successfully on SuperMarioGame in GitOps pipeline 
+
+
+SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+in sonarqube click on manually 
+project name: gitopsdevsecopspipeline
+github actions
+generate a token
+
+
 # Docker Super Mario Project Modified for Learning GitOps Pipeline by Raghu the Security Expert
 
 ## Overview
