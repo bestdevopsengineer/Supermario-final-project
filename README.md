@@ -29,3 +29,12 @@ The Docker Super Mario Project is a modern adaptation of the classic Infinite Ma
 - **Audio Elements**: Enhances the gaming experience with authentic sound effects and background music.
 - **Docker Integration**: Facilitates the deployment of the application in isolated environments, making it easy to share and scale.
 - **GitOps Workflow**: Introduces participants to modern DevOps practices, focusing on automation, monitoring, and version control.
+
+## Goal of this lecture:
+To deploy the supermario docker image to Azure Kubernetes Service using ArgoCd. This will demonstrate the Pull based mechanism of GitOps practices.
+Steps involved:
+1)	Create an application in ArgoCd and connect this application with GitHub Repo. Once connected, we need to ensure Auto Sync is enabled in ArgoCd.
+2)	Add a deployment.yaml file at the root of GitHub Repo. 
+3)	Push your changes to remote GitHub Repo.
+4)	Wait for atleast 3 minutes as ArgoCd default refresh interval is set to 3 minutes.
+5)	Verify that supermario docker image is deployed on Azure Kubernetes Service after 3-4 minutes.
